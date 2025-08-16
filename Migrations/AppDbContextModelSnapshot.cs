@@ -41,11 +41,10 @@ namespace BlurApi.Migrations
                         .HasColumnName("balance");
 
                     b.Property<string>("ChangedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("changed_by");
 
-                    b.Property<DateTime>("ChangedDate")
+                    b.Property<DateTime?>("ChangedDate")
                         .HasColumnType("datetime2")
                         .HasColumnName("changed_date");
 
@@ -66,13 +65,14 @@ namespace BlurApi.Migrations
                         .HasColumnName("email");
 
                     b.Property<string>("InsertedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("inserted_by");
 
                     b.Property<DateTime>("InsertedDate")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasColumnName("inserted_date");
+                        .HasColumnName("inserted_date")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Phone")
                         .IsRequired()
@@ -115,11 +115,10 @@ namespace BlurApi.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<string>("ChangedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("changed_by");
 
-                    b.Property<DateTime>("ChangedDate")
+                    b.Property<DateTime?>("ChangedDate")
                         .HasColumnType("datetime2")
                         .HasColumnName("changed_date");
 
@@ -130,13 +129,14 @@ namespace BlurApi.Migrations
                         .HasColumnName("district");
 
                     b.Property<string>("InsertedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("inserted_by");
 
                     b.Property<DateTime>("InsertedDate")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasColumnName("inserted_date");
+                        .HasColumnName("inserted_date")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Province")
                         .IsRequired()

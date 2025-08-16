@@ -31,10 +31,10 @@ namespace BlurApi.Data
                 entity.Property(e => e.CreatedAt).HasColumnName("created_at");
                 
                
-                entity.Property(e => e.InsertedBy).HasColumnName("inserted_by");
-                entity.Property(e => e.InsertedDate).HasColumnName("inserted_date");
-                entity.Property(e => e.ChangedDate).HasColumnName("changed_date");
-                entity.Property(e => e.ChangedBy).HasColumnName("changed_by");
+                entity.Property(e => e.InsertedBy).IsRequired(false).HasColumnName("inserted_by");
+                entity.Property(e => e.InsertedDate).HasColumnName("inserted_date").HasDefaultValueSql("GETDATE()");
+                entity.Property(e => e.ChangedDate).IsRequired(false).HasColumnName("changed_date");
+                entity.Property(e => e.ChangedBy).IsRequired(false).HasColumnName("changed_by");
                 
                 entity.HasOne(e => e.TaxAddress)
                     .WithMany()
@@ -49,10 +49,10 @@ namespace BlurApi.Data
                 entity.Property(t => t.Province).IsRequired().HasMaxLength(100).HasColumnName("province");
                 entity.Property(t => t.District).IsRequired().HasMaxLength(100).HasColumnName("district");
                 
-                entity.Property(t => t.InsertedBy).HasColumnName("inserted_by");
-                entity.Property(t => t.InsertedDate).HasColumnName("inserted_date");
-                entity.Property(t => t.ChangedDate).HasColumnName("changed_date");
-                entity.Property(t => t.ChangedBy).HasColumnName("changed_by");
+                entity.Property(t => t.InsertedBy).IsRequired(false).HasColumnName("inserted_by");
+                entity.Property(e => e.InsertedDate).HasColumnName("inserted_date").HasDefaultValueSql("GETDATE()"); 
+                entity.Property(t => t.ChangedDate).IsRequired(false).HasColumnName("changed_date");
+                entity.Property(t => t.ChangedBy).IsRequired(false).HasColumnName("changed_by");
             });
         }
 

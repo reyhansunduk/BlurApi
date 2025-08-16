@@ -1,5 +1,7 @@
 using BlurApi.Data;
 using Microsoft.EntityFrameworkCore;
+using BlurApi.Abstract;
+using BlurApi.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IEnterpriceService, EnterpriceManager>();
 
 var app = builder.Build();
 

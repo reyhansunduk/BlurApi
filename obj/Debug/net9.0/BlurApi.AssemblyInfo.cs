@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlurApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74e22cab108456d01a56f34aad28cb3bac22609d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+466c334cfc7fc8ee6c2ed580034780b44e803231")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlurApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlurApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

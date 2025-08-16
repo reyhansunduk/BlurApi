@@ -161,3 +161,6 @@ C:\Users\reyhan.sunduk\Documents\GitHub\BlurApi\obj\Debug\net9.0\refint\BlurApi.
 C:\Users\reyhan.sunduk\Documents\GitHub\BlurApi\obj\Debug\net9.0\BlurApi.pdb
 C:\Users\reyhan.sunduk\Documents\GitHub\BlurApi\obj\Debug\net9.0\BlurApi.genruntimeconfig.cache
 C:\Users\reyhan.sunduk\Documents\GitHub\BlurApi\obj\Debug\net9.0\ref\BlurApi.dll
+C:\Users\reyhan.sunduk\Documents\GitHub\BlurApi\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\reyhan.sunduk\Documents\GitHub\BlurApi\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+C:\Users\reyhan.sunduk\Documents\GitHub\BlurApi\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
